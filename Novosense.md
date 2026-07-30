@@ -1,0 +1,3 @@
+# Novosense
+
+*Файл создан автоматически конвертером Obsidian в GitBook.*
