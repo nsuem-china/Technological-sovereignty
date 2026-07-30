@@ -1,3 +1,0 @@
-# Single-Crystal_Superalloys
-
-*Файл создан автоматически конвертером Obsidian в GitBook.*

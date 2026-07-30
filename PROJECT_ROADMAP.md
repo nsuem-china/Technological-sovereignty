@@ -17,19 +17,19 @@ trl_level: "TRL 1-9"
 
 ### Блоки заметок:
 1. **Блок TRL 1–6 (Опережающее развитие и фронтир)**:
-   - [x] [01_Frontier_TRL1-6/01_Fundamental_Physics_and_Megascience.md](01_Frontier_TRL1-6/01_Fundamental_Physics_and_Megascience.md)
-   - [x] [01_Frontier_TRL1-6/02_Advanced_Semiconductor_Architectures.md](01_Frontier_TRL1-6/02_Advanced_Semiconductor_Architectures.md)
-   - [x] [01_Frontier_TRL1-6/03_Quantum_Tech_and_New_Materials.md](01_Frontier_TRL1-6/03_Quantum_Tech_and_New_Materials.md)
-   - [ ] [01_Frontier_TRL1-6/04_NextGen_AI_and_Autonomous_Systems.md](01_Frontier_TRL1-6/04_NextGen_AI_and_Autonomous_Systems.md) *(В обработке)*
-   - [ ] [01_Frontier_TRL1-6/05_Biotech_and_Synthetic_Biology.md](01_Frontier_TRL1-6/05_Biotech_and_Synthetic_Biology.md)
+   - [x] [[01_Frontier_TRL1-6/01_Fundamental_Physics_and_Megascience.md]]
+   - [x] [[01_Frontier_TRL1-6/02_Advanced_Semiconductor_Architectures.md]]
+   - [x] [[01_Frontier_TRL1-6/03_Quantum_Tech_and_New_Materials.md]]
+   - [ ] [[01_Frontier_TRL1-6/04_NextGen_AI_and_Autonomous_Systems.md]] *(В обработке)*
+   - [ ] [[01_Frontier_TRL1-6/05_Biotech_and_Synthetic_Biology.md]]
 
 2. **Блок TRL 7–9 (Тактическое импортозамещение и инжиниринг)**:
-   - [ ] [02_Deployment_TRL7-9/01_Semiconductor_FAB_Localization.md](02_Deployment_TRL7-9/01_Semiconductor_FAB_Localization.md) *(Локализация FAB 28-90нм, корпусирование)*
-   - [ ] [02_Deployment_TRL7-9/02_KII_Hardware_and_Router_Sovereignty.md](02_Deployment_TRL7-9/02_KII_Hardware_and_Router_Sovereignty.md) *(Замещение сетевого оборудования КИИ)*
-   - [ ] [02_Deployment_TRL7-9/03_Reverse_Engineering_Framework.md](02_Deployment_TRL7-9/03_Reverse_Engineering_Framework.md) *(Методология реверс-инжиниринга и входного контроля IQC)*
+   - [ ] [[02_Deployment_TRL7-9/01_Semiconductor_FAB_Localization.md]] *(Локализация FAB 28-90нм, корпусирование)*
+   - [ ] [[02_Deployment_TRL7-9/02_KII_Hardware_and_Router_Sovereignty.md]] *(Замещение сетевого оборудования КИИ)*
+   - [ ] [[02_Deployment_TRL7-9/03_Reverse_Engineering_Framework.md]] *(Методология реверс-инжиниринга и входного контроля IQC)*
 
 3. **Стратегия и правовой контур**:
-   - [ ] [03_Strategy_and_Economics/01_Joint_Ventures_and_IP_Protection.md](03_Strategy_and_Economics/01_Joint_Ventures_and_IP_Protection.md) *(Защита патентного фонда, СП и антисанкционные риски)*
+   - [ ] [[03_Strategy_and_Economics/01_Joint_Ventures_and_IP_Protection.md]] *(Защита патентного фонда, СП и антисанкционные риски)*
 
 ---
 
