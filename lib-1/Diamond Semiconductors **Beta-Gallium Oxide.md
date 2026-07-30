@@ -1,3 +1,0 @@
-# Diamond Semiconductors **Beta-Gallium Oxide
-
-*Файл создан автоматически из ссылки в отдельном каталоге (lib-1).*
