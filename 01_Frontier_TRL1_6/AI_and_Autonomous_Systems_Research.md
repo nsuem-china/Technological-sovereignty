@@ -4,8 +4,10 @@ tags: [tech-sovereignty, china, trl, neuromorphic, edge-ai, swarm-autonomy, swap
 trl_level: "TRL 1-6"
 ---
 
-> [!abstract] Executive Summary
-> Autonomous combat platforms and multi-agent industrial swarms are undergoing a paradigm shift away from centralized cloud-reliant AI toward **Distributed Edge AI**. This transition relies on the architectural convergence of three core pillars: **neuromorphic event-driven processors** (TRL 1–5), **quantized local small language/vision-action models** (TRL 2–6), and **decentralized multi-agent swarm control** (TRL 1–6). Operating under strict **SWaP-C** (Size, Weight, Power, and Cost) constraints and severe Electronic Warfare (EW) interference, these technologies form the backbone of China's techno-sovereignty roadmap under **Made in China 2025**.
+{% hint style="info" %}
+**Executive Summary**
+Autonomous combat platforms and multi-agent industrial swarms are undergoing a paradigm shift away from centralized cloud-reliant AI toward **Distributed Edge AI**. This transition relies on the architectural convergence of three core pillars: **neuromorphic event-driven processors** (TRL 1–5), **quantized local small language/vision-action models** (TRL 2–6), and **decentralized multi-agent swarm control** (TRL 1–6). Operating under strict **SWaP-C** (Size, Weight, Power, and Cost) constraints and severe Electronic Warfare (EW) interference, these technologies form the backbone of China's techno-sovereignty roadmap under **Made in China 2025**.
+{% endhint %}
 
 ---
 
@@ -29,14 +31,16 @@ Centralized command-and-control structures fail under modern Electronic Warfare 
    Compute Layer               Layer            Consensus Layer
 ```
 
-* Cross-reference: See [[01_Strategic_Context#Autonomy_Paradigm_Shift|Strategic Autonomy Paradigm Shift]] for macro-level geopolitical implications.
+* Cross-reference: See [Strategic Autonomy Paradigm Shift](../lib-1/01_Strategic_Context.md#autonomy-paradigm-shift) for macro-level geopolitical implications.
 
 ---
 
 ## 2. Technical Decomposition by TRL (1–6)
 
-> [!info] Technology Readiness Level (TRL) Breakdown
-> The integrated edge autonomy stack spans early-stage device physics (TRL 1) through to relevant environment prototype flight validation (TRL 6).
+{% hint style="info" %}
+**Technology Readiness Level (TRL) Breakdown**
+The integrated edge autonomy stack spans early-stage device physics (TRL 1) through to relevant environment prototype flight validation (TRL 6).
+{% endhint %}
 
 ```
 TRL 1 ──► TRL 2 ──► TRL 3 ──► TRL 4 ──► TRL 5 ──► TRL 6
@@ -72,7 +76,7 @@ TRL 1 ──► TRL 2 ──► TRL 3 ──► TRL 4 ──► TRL 5 ──► 
 
 #### Algorithmic Stack
 1. **ANN-to-SNN Conversion:** Mapping pre-trained Convolutional or Transformer backbones to spiking architectures via threshold balancing and rate coding, limiting precision loss to $< 1.0\%$.
-2. **Direct SNN Training via Surrogate Gradients:** Overcoming the non-differentiable step function $\Theta(V - V_{\text{th}})$ by introducing continuous surrogate derivatives (e.g., fast sigmoid or arctan relaxations) using backpropagation through time (BPTT). See details in [[03_Neuromorphic_Hardware_Arch#SNN_Compilers|SNN Compiler Implementations]].
+2. **Direct SNN Training via Surrogate Gradients:** Overcoming the non-differentiable step function $\Theta(V - V_{\text{th}})$ by introducing continuous surrogate derivatives (e.g., fast sigmoid or arctan relaxations) using backpropagation through time (BPTT). See details in [SNN Compiler Implementations](../lib-1/03_Neuromorphic_Hardware_Arch.md#snn-compilers).
 3. **On-Chip Plasticity:** Local unsupervised adaptation via Spike-Timing-Dependent Plasticity (STDP):
    $$\Delta W_{ij} = \begin{cases} A_+ \exp\left(-\frac{\Delta t}{\tau_+}\right) & \text{if } \Delta t > 0 \text{ (causal)} \\[6pt] -A_- \exp\left(\frac{\Delta t}{\tau_-}\right) & \text{if } \Delta t < 0 \text{ (acausal)} \end{cases}$$
 
@@ -128,7 +132,7 @@ $$\text{Memory Access per Token} = \frac{\text{Model Parameters} \times \text{By
 * **TRL 1:** Mathematical formulation of Mean-Field Games (MFG) and Decentralized Partially Observable Markov Decision Processes (Dec-POMDPs) for large-agent swarms.
 * **TRL 2:** Formulation of Multi-Agent Reinforcement Learning (MARL) algorithms (MAPPO, QMIX) with joint-reward structures resilient to localized communication loss.
 * **TRL 3:** High-scale software simulation (PettingZoo, Ray RLlib, Isaac Gym) verifying cooperative task allocation across 100+ agents under simulated packet loss ($> 80\%$).
-* **TRL 4:** Lab network benchtop testing of ad-hoc mesh routing combined with Graph Neural Networks (GNNs) and the Consensus-Based Bundle Algorithm (CBBA). See [[04_Swarm_Control_Protocols#CBBA_Consensus|CBBA Protocol Details]].
+* **TRL 4:** Lab network benchtop testing of ad-hoc mesh routing combined with Graph Neural Networks (GNNs) and the Consensus-Based Bundle Algorithm (CBBA). See [CBBA Protocol Details](../lib-1/04_Swarm_Control_Protocols.md#cbba-consensus).
 * **TRL 5:** Relevant environment field testing of a 10–20 UAV swarm executing decentralized target assignment, dynamic trajectory optimization, and sensor fusion under active RF jamming.
 * **TRL 6:** Field-validated tactical swarm flight demonstrating dynamic topology recovery: upon the loss of critical node links, the remaining swarm automatically re-establishes connectivity and reassigns operational roles without human intervention.
 
@@ -143,8 +147,10 @@ When EW interference degrades edge links $\mathcal{E}(t)$, GNN layers running lo
 
 ## 3. Algorithmic Sovereignty
 
-> [!warning] Strategic Vulnerability: The Open-Source Dependency Vector
-> Reliance on foreign open-source foundations risks structural exposure to upstream supply-chain modifications, hidden backdoor triggers, and non-optimized performance on non-Western hardware architectures.
+{% hint style="warning" %}
+**Strategic Vulnerability: The Open-Source Dependency Vector**
+Reliance on foreign open-source foundations risks structural exposure to upstream supply-chain modifications, hidden backdoor triggers, and non-optimized performance on non-Western hardware architectures.
+{% endhint %}
 
 Achieving **Algorithmic Sovereignty** requires independence across three structural layers:
 
@@ -163,7 +169,7 @@ Achieving **Algorithmic Sovereignty** requires independence across three structu
 
 1. **Hardware Acceleration Autonomy:** Developing custom instruction set architectures (ISAs) on open RISC-V cores with dedicated vector extensions for SNN event-handling and memristive VMM. This bypasses proprietary CUDA APIs and x86 silicon dependencies.
 2. **Software & Framework Control:** Replacing Western PyTorch/TensorFlow dependencies with native, sovereign execution frameworks (e.g., Huawei MindSpore, custom SNN backends) to ensure end-to-end stack auditing and native compilation down to Ascend/Tianjic hardware targets.
-3. **Infrastructure Coupling:** Tactical edge swarms interface directly with localized, resilient telecom structures without relying on commercial cloud infrastructure. For execution models embedded in tactical base stations, see [[02_Tactical_TRL7_9/Telecom_Infrastructure_Localization#Edge_Compute_Deployment|Telecom Infrastructure Localization: Edge Compute Deployment]].
+3. **Infrastructure Coupling:** Tactical edge swarms interface directly with localized, resilient telecom structures without relying on commercial cloud infrastructure. For execution models embedded in tactical base stations, see [Telecom Infrastructure Localization: Edge Compute Deployment](../02_Tactical_TRL7_9/Telecom_Infrastructure_Localization.md#edge-compute-deployment).
 
 ---
 
@@ -307,42 +313,50 @@ where $\mathbf{G}_{\text{sem}}$ is the semantic processing gain achieved by loca
 
 ### Case Study 1: Tactical UAV Swarm Penetration in High-EW Zones
 
-> [!question] Scenario Analysis
-> A dynamic 16-UAV autonomous swarm enters a contested target area with severe RF jamming and GPS blackout. The mission requires real-time target identification, dynamic task reallocation upon node loss, and evasive flight path generation against incoming anti-air threats.
-> 
-> **Question:** Why does an integrated Neuromorphic-SLM stack outperform traditional edge GPU configurations in this environment?
+{% hint style="info" %}
+**Scenario Analysis**
+A dynamic 16-UAV autonomous swarm enters a contested target area with severe RF jamming and GPS blackout. The mission requires real-time target identification, dynamic task reallocation upon node loss, and evasive flight path generation against incoming anti-air threats.
 
-> [!check] Click to view solution
-> **Analytical Breakdown:**
-> 1. **Zero External Link Reliance:** Traditional cloud/edge hybrids fail completely due to the loss of RF link connectivity.
-> 2. **Sub-Millisecond Evasion Dynamics:** The neuromorphic SNN processor directly handles high-rate DVS optical flow data, issuing motor feedback commands at $< 2\text{ ms}$ latency. Traditional GPUs suffer frame-buffer latency ($15–50\text{ ms}$), increasing collision risk.
-> 3. **Thermal & Battery Balance:** The event-driven SNN core draws sub-watt power during cruise, preserving energy for local SLM tactical decision cycles ($< 5\text{ W}$ peak), maintaining flight endurance within SWaP limits.
+**Question:** Why does an integrated Neuromorphic-SLM stack outperform traditional edge GPU configurations in this environment?
+{% endhint %}
+
+{% hint style="success" %}
+**Click to view solution**
+**Analytical Breakdown:**
+1. **Zero External Link Reliance:** Traditional cloud/edge hybrids fail completely due to the loss of RF link connectivity.
+2. **Sub-Millisecond Evasion Dynamics:** The neuromorphic SNN processor directly handles high-rate DVS optical flow data, issuing motor feedback commands at $< 2\text{ ms}$ latency. Traditional GPUs suffer frame-buffer latency ($15–50\text{ ms}$), increasing collision risk.
+3. **Thermal & Battery Balance:** The event-driven SNN core draws sub-watt power during cruise, preserving energy for local SLM tactical decision cycles ($< 5\text{ W}$ peak), maintaining flight endurance within SWaP limits.
+{% endhint %}
 
 ---
 
 ### Case Study 2: Quantifying Swarm Link Degradation via Graph Laplacian Dynamics
 
-> [!question] Scenario Analysis
-> A 6-agent autonomous swarm maintains a mesh network topology defined by the following adjacency matrix $\mathbf{A}$:
-> 
-> $$\mathbf{A} = \begin{pmatrix} 0 & 1 & 1 & 0 & 0 & 0 \\ 1 & 0 & 1 & 0 & 0 & 0 \\ 1 & 1 & 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 & 1 & 1 \\ 0 & 0 & 0 & 1 & 0 & 1 \\ 0 & 0 & 0 & 1 & 1 & 0 \end{pmatrix}$$
-> 
-> Active directional jamming isolates Node 3, zeroing out its connection vector.
-> 
-> **Question:** What is the topological impact on algebraic connectivity $\lambda_2(\mathbf{L})$, and how must local MARL agents respond to restore network integrity?
+{% hint style="info" %}
+**Scenario Analysis**
+A 6-agent autonomous swarm maintains a mesh network topology defined by the following adjacency matrix $\mathbf{A}$:
 
-> [!check] Click to view solution
-> **Analytical Breakdown:**
-> 1. **Graph Disconnection Analysis:** Node 3 serves as the bridge between Subcluster $\{1, 2, 3\}$ and Subcluster $\{4, 5, 6\}$. Setting row/column 3 connections to zero causes the Graph Laplacian matrix $\mathbf{L} = \mathbf{D} - \mathbf{A}$ to break into disconnected subgraphs.
-> 2. **Algebraic Connectivity Impact:** $\lambda_2(\mathbf{L})$ drops to $0$, indicating a lost global consensus guarantee for task allocation algorithms like CBBA.
-> 3. **Automated Recovery Protocol:** Local GNN layers on adjacent nodes (e.g., Nodes 2 and 4) detect the dropping eigenvalue condition ($\lambda_2 \to 0$). They trigger emergency spatial realignment commands, adjusting transmit power and closing spatial distance until $\lambda_2 > 0$ is restored.
+$$\mathbf{A} = \begin{pmatrix} 0 & 1 & 1 & 0 & 0 & 0 \\ 1 & 0 & 1 & 0 & 0 & 0 \\ 1 & 1 & 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 & 1 & 1 \\ 0 & 0 & 0 & 1 & 0 & 1 \\ 0 & 0 & 0 & 1 & 1 & 0 \end{pmatrix}$$
+
+Active directional jamming isolates Node 3, zeroing out its connection vector.
+
+**Question:** What is the topological impact on algebraic connectivity $\lambda_2(\mathbf{L})$, and how must local MARL agents respond to restore network integrity?
+{% endhint %}
+
+{% hint style="success" %}
+**Click to view solution**
+**Analytical Breakdown:**
+1. **Graph Disconnection Analysis:** Node 3 serves as the bridge between Subcluster $\{1, 2, 3\}$ and Subcluster $\{4, 5, 6\}$. Setting row/column 3 connections to zero causes the Graph Laplacian matrix $\mathbf{L} = \mathbf{D} - \mathbf{A}$ to break into disconnected subgraphs.
+2. **Algebraic Connectivity Impact:** $\lambda_2(\mathbf{L})$ drops to $0$, indicating a lost global consensus guarantee for task allocation algorithms like CBBA.
+3. **Automated Recovery Protocol:** Local GNN layers on adjacent nodes (e.g., Nodes 2 and 4) detect the dropping eigenvalue condition ($\lambda_2 \to 0$). They trigger emergency spatial realignment commands, adjusting transmit power and closing spatial distance until $\lambda_2 > 0$ is restored.
+{% endhint %}
 
 ---
 
 ## Cross-References & Related Nodes
-* [[01_Strategic_Context#Autonomy_Paradigm_Shift]] — Geopolitical framing of modern autonomous architectures.
-* [[01_Strategic_Context#Made_In_China_2025]] — Sovereign industrial strategy and domestic supply targets.
-* [[02_Tactical_TRL7_9/Telecom_Infrastructure_Localization#Edge_Compute_Deployment]] — Deploying edge processing within local base station infrastructure.
-* [[03_Neuromorphic_Hardware_Arch#SNN_Compilers]] — Software compilation stacks for spiking neural networks.
-* [[04_Swarm_Control_Protocols#CBBA_Consensus]] — Theoretical formulation of Consensus-Based Bundle Algorithms.
-* [[Tech_Sovereignty_Matrix]] — Mapping global dependencies across semiconductor and software toolchains.
+* [01_Strategic_Context](../lib-1/01_Strategic_Context.md#autonomy-paradigm-shift) — Geopolitical framing of modern autonomous architectures.
+* [01_Strategic_Context](../lib-1/01_Strategic_Context.md#made-in-china-2025) — Sovereign industrial strategy and domestic supply targets.
+* [Telecom_Infrastructure_Localization](../02_Tactical_TRL7_9/Telecom_Infrastructure_Localization.md#edge-compute-deployment) — Deploying edge processing within local base station infrastructure.
+* [03_Neuromorphic_Hardware_Arch](../lib-1/03_Neuromorphic_Hardware_Arch.md#snn-compilers) — Software compilation stacks for spiking neural networks.
+* [04_Swarm_Control_Protocols](../lib-1/04_Swarm_Control_Protocols.md#cbba-consensus) — Theoretical formulation of Consensus-Based Bundle Algorithms.
+* [Tech_Sovereignty_Matrix](../lib-1/Tech_Sovereignty_Matrix.md) — Mapping global dependencies across semiconductor and software toolchains.
